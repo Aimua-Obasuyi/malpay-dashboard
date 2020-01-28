@@ -45,15 +45,6 @@ const ContactUs = ({match}) => {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-12">
-                <div className="form-group">
-                  <label htmlFor="webSite">Website</label>
-                  <input className="form-control form-control-lg" id="webSite" type="text"
-                         placeholder="Website"/>
-                </div>
-              </div>
-            </div>
 
             <div className="row">
               <div className="col-12">

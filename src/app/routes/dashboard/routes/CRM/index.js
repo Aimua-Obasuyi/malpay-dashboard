@@ -3,14 +3,12 @@ import Spending from "./Spending";
 import RecentActivity from "./RecentActivity";
 import Recentpurchases from "./Recentpurchases";
 import WelComeCard from "./WelComeCard";
-import Card1 from "./Card1";
-import Card2 from "./Card2";
+import Cards from "./Cards";
 import Widget from "components/Widget/index";
-import PaymentForm from "./PaymentForm"
 import {recentActivity} from "./data";
 import ContainerHeader from "components/ContainerHeader/index";
 import IntlMessages from "util/IntlMessages";
-import Modal from '@material-ui/core/Modal';
+import PopUp from './PopUp';
 
 
 
@@ -45,30 +43,17 @@ const CRM = ({match}) => {
  
       
         <div className="col-xl-8 col-lg-8 col-md-12 col-12 ">
-        
-        <Widget>
-        <div className="row">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-12">
-          <Card1
-      // bankName='ANZ Bank'
-      // cardHolder='Andrew White'
-      // cardNumber='1234567898765432'
-      // issuer='mastercard'
-      // theme='light'
-    />
-        </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-12">
-          <Card2/>
-        </div>
-        </div>
-        </Widget>
-            
-           
-                   <div className="col-xl-12 col-lg-12 col-md-12 col-12">
-              <PaymentForm/>
-              
-            </div>
+        <Widget styleName="p-4">
+      
+            <Cards/>
+        <div className="col-xl-12 col-lg-12 col-md-12 col-12 "   >
           
+          <PopUp/>
+          
+        </div>
+       
+        </Widget>
+                
           </div>
   
 

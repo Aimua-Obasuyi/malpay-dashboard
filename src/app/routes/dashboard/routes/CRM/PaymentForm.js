@@ -29,7 +29,6 @@ export default class PaymentForm extends React.Component {
   render() {
     return (
       <Widget>
-          <h2>Add a Card</h2>
       <div  className="row" id="PaymentForm">
       
         <Cards
@@ -86,6 +85,8 @@ export default class PaymentForm extends React.Component {
             onChange={this.handleInputChange}
             onFocus={this.handleInputFocus}
           />
+
+<Input className="jr-btn bg-cyan text-white col-md-12 col-12" type="submit" value="Submit" />
           </div>
             
         </form>

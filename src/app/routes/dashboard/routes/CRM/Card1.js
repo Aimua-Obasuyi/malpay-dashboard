@@ -4,6 +4,8 @@ import Cards from 'react-credit-cards';
 
 
 export default class Card1 extends React.Component {
+
+  
   state = {
     cvc: '472',
     expiry: '',
@@ -34,4 +36,6 @@ render () {
 
   )
 }
+
+
 }

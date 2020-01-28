@@ -25,6 +25,7 @@ import AppModule from './routes/appModule'
 import ExtraPages from './routes/extraPages';
 import Tour from '../components/Tour/index';
 import FAQ from './routes/FAQ';
+import contactUs from './routes/contactUs';
 import {
   ABOVE_THE_HEADER,
   BELOW_THE_HEADER,
@@ -71,6 +72,7 @@ class App extends React.Component {
               <Switch>
                 <Route path={`${match.url}/dashboard`} component={Dashboard}/>
                 <Route path={`${match.url}/FAQ`} component={FAQ}/>
+                <Route path={`${match.url}/contactUs`} component={contactUs}/>
                 <Route path={`${match.url}/social-apps`} component={SocialApps}/>
                 <Route path={`${match.url}/components`} component={Components}/>
                 <Route path={`${match.url}/icons`} component={Icons}/>
